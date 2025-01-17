@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="light" data-sidebar-size="lg"
+    data-sidebar-image="none">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bill</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/feather/feather.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/layout.js" type="98e51ea7c0b21356feabb401-text/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="header header-one">
+            <a href="dashboard.php"
+                class="d-inline-flex d-sm-inline-flex align-items-center d-md-inline-flex d-lg-none align-items-center device-logo">
+                <img src="assets/img/logo_main.jpeg" class="img-fluid logo2" alt="Logo" width="60px">
+            </a>
+            <div class="main-logo d-inline float-start d-lg-flex align-items-center d-none d-sm-none d-md-none">
+                <div class="logo-white">
+                    <a href="dashboard.php">
+                        <img src="assets/img/logo_main.jpeg" class="img-fluid logo2" alt="Logo" width="60px">
+                    </a>
+                    <a href="dashboard.php">
+                        <img src="assets/img/logo_main.jpeg" class="img-fluid logo2" alt="Logo" width="60px">
+                    </a>
+                </div>
+                <div class="logo-color">
+                    <a href="dashboard.php">
+                        <img src="assets/img/logo_main.jpeg" class="img-fluid logo-blue" alt="Logo" width="60px">
+                    </a>
+                    <a href="dashboard.php">
+                        <img src="assets/img/logo_main.jpeg" class="img-fluid logo-small" alt="Logo">
+                    </a>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" id="toggle_btn">
+                <span class="toggle-bars">
+                    <span class="bar-icons"></span>
+                    <span class="bar-icons"></span>
+                    <span class="bar-icons"></span>
+                    <span class="bar-icons"></span>
+                </span>
+            </a>
+
+        </div>
+
+
+
+
+        <div class="page-wrapper">
+            <div class="content container">
+                <div class="card mb-0">
+                    <div class="card-body">
+                        <div class="page-header d-flex justify-content-between">
+                            <div class="content-page-header">
+                                <h5>Create Bill</h5>
+                            </div>
+
+
+                            <div class="input-block">
+                                <label>Quotation Date</label>
+                                <input type="date" class="form-control" placeholder="Select Date" name="quotation_date"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="input-block mb-5">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="quotation-card">
+                                    <form action="print.html" method="GET" enctype="multipart/form-data">
+
+                                        <div class="form-group-item border-0 mb-0">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <div class="input-block mb-3">
+                                                        <label>Customer Name</label>
+                                                        <input type="text" class="form-control" name="customer_name"
+                                                            id="customer_name" placeholder="Enter Customer Name"
+                                                            required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <div class="input-block mb-3">
+                                                        <label>Phone Number</label>
+                                                        <input type="phone" class="form-control" name="phone" id="phone"
+                                                            placeholder="Enter Phone Number" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <div class="input-block mb-3">
+                                                        <label class="form-label">Quotation No :</label>
+                                                        <input type="text" class="form-control" name="quotation_no"
+                                                            id="quotation_no">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+                                            <hr>
+                                            <div class="form-group-item mt-5">
+
+                                                <div class="col-12">
+                                                    <div class="input-block mb-3 notes-form-group-info">
+                                                        <label>Subject</label>
+                                                        <textarea class="form-control" placeholder="Enter...."
+                                                            name="subject" required> Dear Sir/Mam,</textarea>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+                                            <!-- Form Actions -->
+                                            <div class="text-end">
+                                                <a href="create_quotation.html"
+                                                    class="btn btn-primary cancel me-2">Cancel</a>
+                                                <button type="submit" class="btn btn-primary">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function generateQuotationNumber() {
+            let lastQuotationNo = localStorage.getItem('lastQuotationNo') || 'T&T000';
+            let numericPart = parseInt(lastQuotationNo.slice(3)) + 1;
+            let newQuotationNo = 'T&T' + numericPart.toString().padStart(3, '0');
+            localStorage.setItem('lastQuotationNo', newQuotationNo);
+            return newQuotationNo;
+        }
+
+        document.getElementById('quotation_no').value = generateQuotationNumber();
+    </script>
+
+    <script src="assets/js/jquery-3.7.1.min.js" type="98e51ea7c0b21356feabb401-text/javascript"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js" type="98e51ea7c0b21356feabb401-text/javascript"></script>
+
+    <script src="assets/js/feather.min.js" type="98e51ea7c0b21356feabb401-text/javascript"></script>
+
+    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"
+        type="98e51ea7c0b21356feabb401-text/javascript"></script>
+
+    <script src="assets/plugins/apexchart/apexcharts.min.js" type="98e51ea7c0b21356feabb401-text/javascript"></script>
+    <script src="assets/plugins/apexchart/chart-data.js" type="98e51ea7c0b21356feabb401-text/javascript"></script>
+
+    <script src="assets/js/theme-settings.js" type="98e51ea7c0b21356feabb401-text/javascript"></script>
+    <script src="assets/js/greedynav.js" type="98e51ea7c0b21356feabb401-text/javascript"></script>
+
+    <script src="assets/js/script.js" type="98e51ea7c0b21356feabb401-text/javascript"></script>
+
+    <script src="./cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="98e51ea7c0b21356feabb401-|49" defer></script>
+</body>
+
+</html>
