@@ -20,10 +20,37 @@
       <div class="tm_invoice tm_style1 tm_type1" id="tm_download_section">
         <div class="tm_invoice_in">
           <div class="tm_invoice_head tm_top_head tm_mb15 tm_align_center">
-            <div class="tm_invoice_left">
-              <div class="tm_logo"></div>
-              <img src="assets/img/logo_main.jpeg" alt="Logo" width="120px" height="120px" >
+           <div class="tm_logo">
+                <img src="assets/img/logo_maIn.jpeg" alt="Logo">
+              </div>
+              <div class="content">
+                <p>GST NO: 33AXHPV7944A1ZC</p>
+              </div>
             </div>
+            
+            <style>
+              /* Hide content by default */
+              .content {
+                display: none;
+                font-weight: 600; /* Set font weight to 600 */
+              }
+            
+              /* Make the parent a flex container for horizontal alignment */
+              .tm_invoice_left {
+                display: flex;
+                align-items: center; /* Align items vertically centered */
+              }
+            
+              /* Show content on mobile screens and align it to the right side */
+              @media (max-width: 768px) {
+                .content {
+                  display: block;
+                  margin-left: auto; /* Align content to the right */
+                  text-align: right; /* Align text to the right */
+                  font-weight: 600; /* Set font weight to 600 */
+                }
+              }
+            </style>
             <div class="tm_invoice_right tm_text_right tm_mobile_hide">
               <div class="tm_f50 tm_text_uppercase tm_white_color">
                 <p> To & To Packers and Movers</p> <br> GST NO: 33AXHPV7944A1ZC
