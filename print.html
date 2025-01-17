@@ -9,6 +9,9 @@
   <meta name="author" content="Laralink">
   <title>Invoice</title>
   <link rel="stylesheet" href="assets1/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -18,7 +21,7 @@
         <div class="tm_invoice_in">
           <div class="tm_invoice_head tm_top_head tm_mb15 tm_align_center">
             <div class="tm_invoice_left">
-              <div class=""><img src="assets/img/logo_maIn.jpeg"  width="120px" height="138px" alt="Logo"></div>
+              <div class="tm_logo"><img src="assets/img/logo_maIn.jpeg" alt="Logo"></div>
             </div>
             <div class="tm_invoice_right tm_text_right tm_mobile_hide">
               <div class="tm_f50 tm_text_uppercase tm_white_color">
@@ -29,27 +32,36 @@
           </div>
 
           <div class="tm_invoice_info tm_mb25">
-            <div class="tm_card_note tm_mobile_hide">
-              <b class="tm_primary_color">Date: </b><span id="invoice_date"></span>
+            <div class="tm_card_note">
+
             </div>
             <div class="tm_invoice_info_list tm_white_color">
-              <p class="tm_invoice_number tm_m0">Bill No: <b id="quotation_no"></b></p>
+              <p class="tm_invoice_number tm_m0 d-inline mr-3">Bill No: <b id="quotation_no"></b></p>
+              <p class="tm_invoice_date tm_m0 d-inline">Date: <b id="invoice_date"></b></p>
             </div>
+
             <div class="tm_invoice_seperator tm_accent_bg"></div>
           </div>
 
-          <div class="tm_invoice_head tm_mb10">
+          <div class="tm_invoice_head tm_mb10 mt-3 mt-sm-0">
             <div class="tm_invoice_left">
-              <p class="tm_mb2"><b class="tm_primary_color">To:</b> <br>
+              <p class="tm_mb2"><b class="tm_primary_color">Bill To:</b> <br>
                 <span id="customer_name">,</span> <br><span id="phone">.</span>
               </p>
             </div>
 
-            <div class="tm_invoice_right tm_text_right">
-              <h4 class="tm_mb2">Quotation</h4>
-
+            <div class="tm_invoice_right tm_text_right mt-3">
+              <p class="tm_mb2"><b class="tm_primary_color">Pay To:</b></p>
+              <p>
+                To & To Packers and Movers,<br>
+                28/3 TVS Nagar 5th Street,<br>
+                Padi, Chennai - 600050,<br>
+                Ph-8248576676/7708345669/044-46022479,<br>
+                to&topackersandmovers@gmail.com.
+              </p>
             </div>
           </div>
+
 
           <div class="tm_note">
             <p><b class="tm_primary_color">Subject:</b></p>
@@ -64,30 +76,7 @@
               writing to <br>Seller within thirty (30) days after delivery of goods to the address stated.</p>
           </div>
 
-          <!-- Subject Section -->
 
-
-          <!-- Footer Section with Address -->
-          <!-- Footer Section with Address and Email -->
-          <div class="tm_table tm_style1" style="margin: 20px;">
-            <div class="">
-              <div class="tm_table_responsive">
-                <table>
-                  <thead>
-                    <tr class="tm_accent_bg">
-                      <th class="tm_width_3 tm_semi_bold tm_white_color">
-                        28/3 TVS Nagar 5th Street, Padi, Chennai - 600050, Ph-8248576676/7708345669/044-46022479
-                      </th>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-              <!-- Centered email -->
-              <div style="text-align: end; margin-top: 10px;">
-                <b>Email:</b> to&topackersandmovers@gmail.com <!-- Replace with your actual email -->
-              </div>
-            </div>
-          </div>
 
 
         </div>
